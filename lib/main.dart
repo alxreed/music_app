@@ -112,8 +112,7 @@ class _Home extends State<Home> {
               activeColor: Colors.red,
               onChanged: (double d) {
                 setState(() {
-                  Duration nouvelleDuration = new Duration(seconds: d.toInt());
-                  position = nouvelleDuration;
+                  audioPlayer.seek(d);
                 });
               },
             )
